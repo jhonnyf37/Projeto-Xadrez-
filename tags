@@ -1,0 +1,95 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/lucas/.local/src/janjao2/000nos/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+BATCH_SIZE	train_model.py	/^BATCH_SIZE = 32$/;"	v
+EPOCHS	train_model.py	/^EPOCHS = 50$/;"	v
+IMAGE_SIZE	train_model.py	/^IMAGE_SIZE = (150, 150)$/;"	v
+INTERSECTIONS	image_intersections.py	/^def INTERSECTIONS(img, lines, size=10):$/;"	f
+NC_LAPS_MODEL	image_intersections.py	/^NC_LAPS_MODEL = model_from_json(open(__laps_model, 'r').read())$/;"	v
+NC_SLID_CLAHE	image_lines.py	/^NC_SLID_CLAHE = [[3,   (2, 6),    5], # @1$/;"	v
+Y_prediction	train_model.py	/^Y_prediction = model.predict_generator(validation_gen)$/;"	v
+__analyze	image_lines.py	/^    def __analyze(group):$/;"	f	function:generate_all_possible_lines	file:
+__convex_approx	image_corners.py	/^    def __convex_approx(points, alfa=0.001):$/;"	f	function:llr_polyscore	file:
+__convex_approx	image_corners.py	/^    def __convex_approx(points, alfa=0.01):$/;"	f	function:find_inner_corners	file:
+__dis	image_corners.py	/^    def __dis(a, b):$/;"	f	function:find_inner_corners	file:
+__dis	image_crop.py	/^    def __dis(a, b):$/;"	f	function:image_transform	file:
+__dis	image_lines.py	/^    def __dis(a, b):$/;"	f	function:generate_all_possible_lines	file:
+__fi	image_lines.py	/^    def __fi(x):$/;"	f	function:generate_all_possible_lines	file:
+__generate	image_lines.py	/^    def __generate(a, b, n):$/;"	f	function:generate_all_possible_lines	file:
+__h	image_corners.py	/^    def __h(l):$/;"	f	function:find_inner_corners	file:
+__laps_model	image_intersections.py	/^__laps_model = 'data\/models\/laps.model.json'$/;"	v
+__laps_weights	image_intersections.py	/^__laps_weights = 'data\/models\/laps.weights.h5'$/;"	v
+__loop	image_crop.py	/^    def __loop(x, y):$/;"	f	function:image_scale	file:
+__shi	image_crop.py	/^    def __shi(seq, n=0):$/;"	f	function:image_transform	file:
+__similar	image_lines.py	/^    def __similar(l1, l2):$/;"	f	function:generate_all_possible_lines	file:
+__sort	image_corners.py	/^    def __sort(x):$/;"	f	function:llr_polysort	file:
+__un	image_lines.py	/^    def __un(a, b):$/;"	f	function:generate_all_possible_lines	file:
+__v	image_corners.py	/^    def __v(l):$/;"	f	function:find_inner_corners	file:
+base_model	train_model.py	/^base_model = VGG16(weights='imagenet', include_top=False, input_shape=(150,150,3))$/;"	v
+callback	train_model.py	/^callback = EarlyStopping(monitor='val_loss', patience=5)$/;"	v
+classes	train_model.py	/^classes = validation_gen.classes[validation_gen.index_array]$/;"	v
+cluster_similar_points	image_intersections.py	/^def cluster_similar_points(points, max_dist=10):$/;"	f
+config	train_model.py	/^config = ConfigProto()$/;"	v
+corners	image_final_crop.py	/^import image_corners as corners$/;"	I	nameref:module:image_corners
+crop	image_crop.py	/^def crop(pts,img):$/;"	f
+crop	image_final_crop.py	/^import image_crop as crop$/;"	I	nameref:module:image_crop
+cropped	main.py	/^cropped = return_cropped_image(image)$/;"	v
+file	main.py	/^file = open(sys.argv[1], "rb")$/;"	v
+find_all_intersections	image_intersections.py	/^def find_all_intersections(lines):$/;"	f
+find_inner_corners	image_corners.py	/^def find_inner_corners(img, points, lines):$/;"	f
+find_outer_corners	image_corners.py	/^def find_outer_corners(four_points, img):$/;"	f
+generate_all_possible_lines	image_lines.py	/^def generate_all_possible_lines(img, segments):$/;"	f
+history	train_model.py	/^history = model.fit($/;"	v
+image	main.py	/^image = read_image(file.read())$/;"	v
+image_resize	image_crop.py	/^def image_resize(img, height=500):$/;"	f
+image_scale	image_crop.py	/^def image_scale(pts, scale):$/;"	f
+image_transform	image_crop.py	/^def image_transform(img, points, square_length=150):$/;"	f
+inter	image_final_crop.py	/^import image_intersections as inter$/;"	I	nameref:module:image_intersections
+intersections_detector	image_intersections.py	/^def intersections_detector(img):$/;"	f
+lines_lib	image_final_crop.py	/^import image_lines as lines_lib$/;"	I	nameref:module:image_lines
+llr_correctness	image_corners.py	/^def llr_correctness(points, shape):$/;"	f
+llr_normalize	image_corners.py	/^def llr_normalize(points):$/;"	f
+llr_polyscore	image_corners.py	/^def llr_polyscore(cnt, pts, cen, alfa=5, beta=2):$/;"	f
+llr_polysort	image_corners.py	/^def llr_polysort(pts):$/;"	f
+llr_unique	image_corners.py	/^def llr_unique(a):$/;"	f
+model	train_model.py	/^model = Model(inputs=base_model.input, outputs=predictions)$/;"	v
+model	train_model.py	/^model = VGG16(weights='imagenet')$/;"	v
+na	image_corners.py	/^na = np.array$/;"	v
+na	image_crop.py	/^na = np.array$/;"	v
+na	image_lines.py	/^na = np.array$/;"	v
+nln	image_corners.py	/^    nln = lambda l1, x, dx: \\$/;"	f	function:find_inner_corners	file:
+nln	image_corners.py	/^    nln = lambda l1, x, dx: \\$/;"	f	function:llr_polyscore	file:
+nln	image_lines.py	/^    nln = lambda l1, x, dx: \\$/;"	f	function:generate_all_possible_lines	file:
+np	image_corners.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	image_crop.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	image_intersections.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	image_lines.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	main.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	train_model.py	/^import numpy as np$/;"	I	nameref:module:numpy
+pSLID	image_lines.py	/^def pSLID(img, thresh = 150):$/;"	f
+predictions	train_model.py	/^predictions = Dense(13, activation='softmax')(x) # match number of classes predicted$/;"	v
+read_image	main.py	/^def read_image(file):$/;"	f
+return_cropped_image	image_final_crop.py	/^def return_cropped_image(img):$/;"	f
+scale	image_lines.py	/^    scale = lambda x, y, s: int(x * (1+s)\/2 + y * (1-s)\/2)$/;"	f	function:slid_tendency	file:
+session	train_model.py	/^session = Session(config=config)$/;"	v
+slid_canny	image_lines.py	/^def slid_canny(img, sigma=0.25):$/;"	f
+slid_clahe	image_lines.py	/^def slid_clahe(img, limit=2, grid=(3,3), iters=5):$/;"	f
+slid_detector	image_lines.py	/^def slid_detector(img, alfa=150, beta=2):$/;"	f
+slid_tendency	image_lines.py	/^def slid_tendency(raw_lines, s=4):$/;"	f
+target_names	train_model.py	/^target_names = ['Black Bishop', 'Black King', 'Black Knight', 'Black Pawn',$/;"	v
+train_datagen	train_model.py	/^train_datagen = ImageDataGenerator($/;"	v
+train_gen	train_model.py	/^train_gen = train_datagen.flow_from_directory($/;"	v
+validation_datagen	train_model.py	/^validation_datagen = ImageDataGenerator(rescale=1.\/255)$/;"	v
+validation_gen	train_model.py	/^validation_gen = validation_datagen.flow_from_directory($/;"	v
+x	train_model.py	/^x = Dense(500, activation='relu')(x)$/;"	v
+x	train_model.py	/^x = Flatten()(x)  # flatten from convolution tensor output (from VGG16)$/;"	v
+x	train_model.py	/^x = base_model.output$/;"	v
+y_prediction_argument	train_model.py	/^y_prediction_argument = np.argmax(Y_prediction, axis= -1)$/;"	v
